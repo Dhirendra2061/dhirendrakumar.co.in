@@ -25,58 +25,8 @@
     <!-- Start main wrapper -->
     <div class="wrapper">
         <!-- Header area start -->
-        <header class="header-area header-style-one intelligent-header">
-            <div class="header-middle-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3  col-sm-2 col-xs-6">
-                            <div class="logo">
-                                <h3><a href="index.html">Dhirendra</a></h3>
-                            </div>
-                        </div>
-                        <div class="col-md-9 col-sm-10 hidden-xs hidden-sm">
-                            <div class="menu-area">
-                                <nav>
-                                    <ul class="main-menu clearfix">
-                                        <li><a href="index.html">Home</a>
-                                        </li>
-                                        
-                                       <li><a href="#">Interview Prepration<span><i class="ti-angle-down"></i></span></a>
-                                        <li><a href="#">Blog <span><i class="ti-angle-down"></i></span></a>
-                                          <!--  <ul class="dropdown-show-right">
-                                                <li><a href="blog.html">Blog Default</a></li>
-                                            </ul> -->
-                                        </li>
-										
-                                        <li><a href="about-me.html">About Me</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <!-- START OF MOBILE MENU AREA -->
-                        <div class="mobile-menu-area clearfix hidden-md hidden-lg">
-                            <nav class="mobile-menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a>
-                                    </li>
-                                    <li><a href="#">My Blog</a>
-                                       <!-- <ul class="dropdown-show-right">
-                                            <li><a href="blog.html">Blog Default</a></li>
-                                        </ul> -->
-                                    </li>
-									 <li><a href="#">Interview Prepration</a>
-                                    <li><a href="about-me.html">About Me</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- END OF MOBILE MENU AREA -->
-                    </div>
-                </div>
-            </div>
-        </header>
+       <div id="header">
+		</div>
         <div class="intelligent-header-space"></div>
         <!-- Header area End -->
         <!-- Main content start -->
@@ -281,5 +231,11 @@
     <script src="js/plugins.js"></script>
     <script src="js/jquery.isotope.js"></script>
     <script src="js/main.js"></script>
+	<script>
+	$( document ).ready(function(){
+    $("#header").load("includes/header.html"); 
+   // $("#footer").load("include/footer.html"); 
+}); 
+	</script>
 </body>
 </html>
